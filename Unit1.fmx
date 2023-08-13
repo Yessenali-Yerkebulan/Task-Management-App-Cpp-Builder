@@ -1,0 +1,47 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 436
+  ClientWidth = 434
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 48.000000000000000000
+    Text = 'Add Task:'
+  end
+  object TaskEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 64.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object AddButton: TButton
+    Position.X = 304.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'ADD'
+    OnClick = AddButtonClick
+  end
+  object TasksListBox: TListBox
+    Position.X = 64.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 233.000000000000000000
+    Size.PlatformDefault = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = TasksListBoxItemClick
+    Viewport.Width = 221.000000000000000000
+    Viewport.Height = 229.000000000000000000
+  end
+end
